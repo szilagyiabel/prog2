@@ -1,0 +1,15 @@
+DirectedGraph dg = new DirectedGraph();
+db.addVertice('a');
+db.addVertice('b');
+db.addVertice('c');
+db.addVertice('b');
+db.addEdge('a', 'b');
+db.addEdge('a', 'c');
+db.addEdge('c', 'b');
+db.addEdge('c', 'b');
+System.out.println(db); // a -> b
+// a -> c
+// c -> b
+System.out.println(db.getVertices()); // [ a, b, c ]
+System.out.println(db.getNumberOfVertices()); // 3
+System.out.println(db.getNumberOfEdges()); // 3
